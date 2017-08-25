@@ -2,15 +2,16 @@ import lessThan from "@unction/lessthan"
 import append from "@unction/append"
 import reduceWithValueKey from "@unction/reducewithvaluekey"
 import length from "@unction/length"
+import fresh from "@unction/fresh"
 
 export default function takeLast (count: number): mixed {
-  return function takeLastCount (array: ArrayType): ArrayType {
-    const total = length(array)
+  return function takeLastCount (orderedList: ArrayType | string): ArrayType | string {
+    const total = length(orderedList)
 
     return reduceWithValueKey(
-      (accumulated: ArrayType): Function =>
+      (accumulated: ArrayType | string): Function =>
         (value: ValueType): Function =>
-          (index: number): ArrayType => {
+          (index: number): ArrayType | string => {
             if (lessThan(index)(total - count)) {
               return accumulated
             }
@@ -18,9 +19,9 @@ export default function takeLast (count: number): mixed {
             return append(value)(accumulated)
           }
     )(
-      []
+      fresh(orderedList)
     )(
-      array
+      orderedList
     )
   }
 }

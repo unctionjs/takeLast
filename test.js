@@ -20,3 +20,21 @@ test(({same, end}) => {
 
   end()
 })
+
+test(({same, end}) => {
+  same(
+    takeLast(2)("abc"),
+    "bc"
+  )
+
+  end()
+})
+
+test(({same, end}) => {
+  same(
+    takeLast(1)("abc"),
+    "c"
+  )
+
+  end()
+})
