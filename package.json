@@ -1,7 +1,7 @@
 {
-  "name": "@unction/{{FQNAME}}",
+  "name": "@unction/takelast",
   "version": "1.0.0",
-  "description": "",
+  "description": "Returns the last N of a list of ordered values",
   "keywords": [
     "unction",
     "functional"
@@ -14,9 +14,9 @@
     }
   ],
   "license": "ISC",
-  "homepage": "https://github.com/unctionjs/{{NAME}}#readme",
-  "repository": "github:unctionjs/{{NAME}}",
-  "bugs": "https://github.com/unctionjs/{{NAME}}/issues",
+  "homepage": "https://github.com/unctionjs/takeLast#readme",
+  "repository": "github:unctionjs/takeLast",
+  "bugs": "https://github.com/unctionjs/takeLast/issues",
   "main": "transpiled/source.js",
   "nyc": {
     "require": [
@@ -58,6 +58,9 @@
     "tap": "10.7.2"
   },
   "dependencies": {
-    "ramda": "0.24.1"
+    "@unction/append": "2.0.0",
+    "@unction/lessthan": "1.0.0",
+    "@unction/length": "1.0.0",
+    "@unction/reducewithvaluekey": "4.0.0"
   }
 }
