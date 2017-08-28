@@ -17,7 +17,7 @@
   "homepage": "https://github.com/unctionjs/takeLast#readme",
   "repository": "github:unctionjs/takeLast",
   "bugs": "https://github.com/unctionjs/takeLast/issues",
-  "main": "transpiled/source.js",
+  "main": "transpiled/index.js",
   "nyc": {
     "require": [
       "babel-register"
@@ -63,6 +63,5 @@
     "@unction/length": "1.0.0",
     "@unction/lessthan": "1.0.0",
     "@unction/reducewithvaluekey": "4.1.0"
-  },
-  "main": "transpiled/index.js"
+  }
 }
