@@ -61,9 +61,9 @@
   "dependencies": {
     "@unction/append": "4.0.0",
     "@unction/fresh": "6.0.0",
-    "@unction/length": "3.0.0",
+    "@unction/length": "4.0.0",
     "@unction/lessthan": "2.0.0",
-    "@unction/reducewithvaluekey": "7.0.0"
+    "@unction/reducewithvaluekey": "8.0.0"
   },
   "files": [
     "transpiled/index.js"
