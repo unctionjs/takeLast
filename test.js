@@ -1,40 +1,40 @@
 /* eslint-disable no-magic-numbers */
-import {test} from "tap"
+import {test} from "tap";
 
-import takeLast from "./index"
+import takeLast from "./index";
 
 test(({same, end}) => {
   same(
     takeLast(2)(["a", "b", "c"]),
     ["b", "c"]
-  )
+  );
 
-  end()
-})
+  end();
+});
 
 test(({same, end}) => {
   same(
     takeLast(1)(["a", "b", "c"]),
     ["c"]
-  )
+  );
 
-  end()
-})
+  end();
+});
 
 test(({same, end}) => {
   same(
     takeLast(2)("abc"),
     "bc"
-  )
+  );
 
-  end()
-})
+  end();
+});
 
 test(({same, end}) => {
   same(
     takeLast(1)("abc"),
     "c"
-  )
+  );
 
-  end()
-})
+  end();
+});
