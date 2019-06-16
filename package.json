@@ -1,6 +1,6 @@
 {
   "name": "@unction/takelast",
-  "version": "11.6.1",
+  "version": "11.7.0",
   "description": "Returns the last N of a list of ordered values",
   "keywords": [
     "unction",
