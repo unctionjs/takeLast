@@ -1,5 +1,5 @@
 /* eslint-disable no-magic-numbers */
-import takeLast from "./index.ts";
+import takeLast from "./index";
 
 test(() => {
   expect(takeLast(2)(["a", "b", "c"])).toEqual(["b", "c"]);
