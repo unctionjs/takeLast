@@ -4,14 +4,11 @@ import reduceWithValueKey from "@unction/reducewithvaluekey";
 import length from "@unction/length";
 import fresh from "@unction/fresh";
 
-import {OrderedEnumerableType} from "./types";
-
 export default function takeLast<V> (count: number) {
-  return function takeLastCount (orderedEnumerable: OrderedEnumerableType<V>): OrderedEnumerableType<V> {
+  return function takeLastCount (orderedEnumerable: Array<V> | string): Array<V> | string {
     const total = length(orderedEnumerable);
 
-
-    return reduceWithValueKey((accumulated: OrderedEnumerableType<V>) => (value: V) => (index: number): OrderedEnumerableType<V> => {
+    return reduceWithValueKey((accumulated: Array<V> | string) => (value: V) => (index: number): Array<V> | string => {
       if (lessThan(index)(total - count)) {
         return accumulated;
       }
